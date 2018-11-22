@@ -1,9 +1,12 @@
 package com.example.demo.app.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.app.service.ISpringBootService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,10 +16,12 @@ import io.swagger.annotations.ApiOperation;
 @RequestMapping("/spring/boot/user")
 public class SpringBootConterller {
 
+	@Autowired 
+	ISpringBootService service;
 	@ApiOperation(value="获取用户姓名",notes="swagger学习")
 	@RequestMapping(value = "/name" ,method = RequestMethod.POST)
 	public String getUser(@RequestBody String userName) {
 		
-		return "你的姓名是："+userName;
+		return service.getUser(userName);
 	}
 }
