@@ -1,0 +1,23 @@
+[WARN ]-[2019-05-06 21:34:16]-[org.springframework.boot.SpringApplication:103]: Error handling failed (no error message)
+[ERROR]-[2019-05-06 21:34:16]-[org.springframework.boot.SpringApplication:858]: Application run failed
+java.lang.NoClassDefFoundError: org/springframework/util/unit/DataSize
+	at org.springframework.boot.convert.StringToDataSizeConverter.getConvertibleTypes(StringToDataSizeConverter.java:40)
+	at org.springframework.core.convert.support.GenericConversionService$Converters.add(GenericConversionService.java:509)
+	at org.springframework.core.convert.support.GenericConversionService.addConverter(GenericConversionService.java:119)
+	at org.springframework.boot.convert.ApplicationConversionService.addApplicationConverters(ApplicationConversionService.java:107)
+	at org.springframework.boot.convert.ApplicationConversionService.configure(ApplicationConversionService.java:91)
+	at org.springframework.boot.convert.ApplicationConversionService.<init>(ApplicationConversionService.java:52)
+	at org.springframework.boot.convert.ApplicationConversionService.<init>(ApplicationConversionService.java:45)
+	at org.springframework.boot.convert.ApplicationConversionService.getSharedInstance(ApplicationConversionService.java:71)
+	at org.springframework.boot.SpringApplication.configureEnvironment(SpringApplication.java:486)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:346)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.Application.main(Application.java:13)
+Caused by: java.lang.ClassNotFoundException: org.springframework.util.unit.DataSize
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 14 more

@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.app.service.ISpringBootService;
+import com.example.demo.app.vo.UserInfoVO;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -20,7 +21,7 @@ public class SpringBootConterller {
 	ISpringBootService service;
 	@ApiOperation(value="获取用户姓名",notes="swagger学习")
 	@RequestMapping(value = "/name" ,method = RequestMethod.POST)
-	public String getUser(@RequestBody String userName) {
+	public UserInfoVO getUser(@RequestBody String userName) {
 		
 		return service.getUser(userName);
 	}

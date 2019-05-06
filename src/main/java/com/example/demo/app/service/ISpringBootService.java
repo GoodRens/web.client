@@ -1,6 +1,8 @@
 package com.example.demo.app.service;
 
+import com.example.demo.app.vo.UserInfoVO;
+
 public interface ISpringBootService {
 
-	public String getUser(String userName);
+	public UserInfoVO getUser(String userName);
 }
