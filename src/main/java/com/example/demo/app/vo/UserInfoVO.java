@@ -1,11 +1,14 @@
 package com.example.demo.app.vo;
 
+import java.util.Date;
+
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
-
+@ToString
 public class UserInfoVO {
 
 	/** ID */
@@ -21,7 +24,7 @@ public class UserInfoVO {
 	/** 地址 */
 	private String userAddress;
 	/** 注册时间 */
-	private String userRegisterDate;
+	private Date userRegisterDate;
 	/** 是否在线0下线1在线 */
 	private String userOnlineState;
 	/** 是否实名0未实名1实名 */

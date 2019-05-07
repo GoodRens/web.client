@@ -34,7 +34,7 @@ public class Swagger2 {
  
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("spring-cloud 实战 APIs")
+                .title("Web-Client")
                 .description("--------------------------------")
                 .termsOfServiceUrl("https://")
                 .contact("马龙贵")

@@ -12,5 +12,12 @@ public interface IUserInfoDao {
 	 * 
 	 * @return
 	 */
-	public UserInfoVO getUserInfoByTel();
+	public UserInfoVO getUserInfoByTel(UserInfoVO userInfo);
+
+	/**
+	 * 用户注册
+	 * 
+	 * @param userInfo
+	 */
+	public void insertUser(UserInfoVO userInfo);
 }
