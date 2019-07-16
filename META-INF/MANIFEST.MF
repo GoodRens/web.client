@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: Client
-Bundle-SymbolicName: web.client
-Bundle-Version: 1.0.0.qualifier
-Export-Package: com.example.demo,
- com.example.demo.app.controller,
- com.example.demo.app.service,
- com.example.demo.app.service.impl
