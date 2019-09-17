@@ -1,6 +1,6 @@
-package com.example.demo.app.service;
+package com.example.demo.login.service;
 
-import com.example.demo.app.vo.UserInfoVO;
+import com.example.login.vo.UserInfoVO;
 
 public interface IUserInfoService {
 

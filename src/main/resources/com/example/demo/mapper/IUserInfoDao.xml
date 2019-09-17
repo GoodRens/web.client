@@ -11,7 +11,7 @@
 		parameterType="java.lang.Long" 入参数据类型 -->
 
 
-	<select id="getUserInfoByTel" resultType="com.example.demo.app.vo.UserInfoVO">
+	<select id="getUserInfoByTel" resultType="com.example.login.vo.UserInfoVO">
 		SELECT
 			t.`user_id` AS id,
 			t.`user_name` AS userName,

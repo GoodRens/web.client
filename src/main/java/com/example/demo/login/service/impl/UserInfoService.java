@@ -1,13 +1,16 @@
-package com.example.demo.app.service.impl;
+package com.example.demo.login.service.impl;
 
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.app.dao.IUserInfoDao;
-import com.example.demo.app.service.IUserInfoService;
-import com.example.demo.app.vo.UserInfoVO;
+import com.example.demo.login.dao.IUserInfoDao;
+import com.example.demo.login.service.IUserInfoService;
+import com.example.login.vo.UserInfoVO;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -22,7 +25,7 @@ public class UserInfoService implements IUserInfoService {
 
 	@Override
 	public String getUser(UserInfoVO userInfo) {
-		 log.info("登录用户信息" + userInfo.toString());
+		log.info("登录用户信息" + userInfo.toString());
 		UserInfoVO detaileInfo = userInfoDao.getUserInfoByTel(userInfo);
 		// 密码验证
 		if (Objects.isNull(detaileInfo)) {
@@ -39,6 +42,12 @@ public class UserInfoService implements IUserInfoService {
 	@Override
 	public void insertUser(UserInfoVO userInfo) {
 		userInfoDao.insertUser(userInfo);
+	}
+
+	private static String name = "英雄联盟";
+
+	private void planGanme() {
+		System.out.println("我会玩" + name);
 	}
 
 }

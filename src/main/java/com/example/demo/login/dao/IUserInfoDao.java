@@ -1,8 +1,10 @@
-package com.example.demo.app.dao;
+package com.example.demo.login.dao;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.demo.app.vo.UserInfoVO;
+import com.example.login.vo.UserInfoVO;
+
+
 
 @Mapper
 public interface IUserInfoDao {

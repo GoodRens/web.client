@@ -50,6 +50,13 @@
 			<version>2.5.0</version>
 		</dependency>
 
+		<!-- 集成activity -->
+		<dependency>
+			<groupId>org.activiti</groupId>
+			<artifactId>activiti-spring-boot-starter</artifactId>
+			<version>7.1.0.M3.1</version>
+		</dependency>
+
 		<!-- log4j -->
 		<dependency>
 			<groupId>log4j</groupId>
@@ -66,7 +73,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!--引入log4j2-->
+		<!--引入log4j2 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-log4j2</artifactId>

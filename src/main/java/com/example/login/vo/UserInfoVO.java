@@ -1,4 +1,4 @@
-package com.example.demo.app.vo;
+package com.example.login.vo;
 
 import java.util.Date;
 

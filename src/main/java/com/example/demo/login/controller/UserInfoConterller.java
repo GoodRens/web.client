@@ -1,4 +1,4 @@
-package com.example.demo.app.controller;
+package com.example.demo.login.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.app.service.IUserInfoService;
-import com.example.demo.app.vo.UserInfoVO;
+import com.example.demo.login.service.IUserInfoService;
+import com.example.login.vo.UserInfoVO;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
