@@ -16,7 +16,7 @@ import io.swagger.annotations.Info;
 @RestController
 @Api(tags = "用户操作")
 @RequestMapping("/web/client/user")
-public class UserInfoConterller {
+public class UserInfoController {
 
 	@Autowired
 	private IUserInfoService service;
