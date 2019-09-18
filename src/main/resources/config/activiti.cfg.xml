@@ -15,4 +15,4 @@
 		<property name="mailServerHost" value="mail.my-corp.com" />
 		<property name="mailServerPort" value="5025" />
 	</bean>
-	</beans>
+</beans>
